@@ -17,8 +17,9 @@ public class AnimalService {
         return repository.findAll();
     }
 
-    public void saveNewAnimal(Animal animal) {
+    public Animal saveNewAnimal(Animal animal) {
         repository.save(animal);
+        return animal;
     }
 
     public List<String> getOwnedAnimals() {

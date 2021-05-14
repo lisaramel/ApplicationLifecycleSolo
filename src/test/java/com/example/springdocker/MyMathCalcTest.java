@@ -13,10 +13,10 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class MyMathCalcTest {
 
-    MyMathCalc calc = new MyMathCalc();
-
     @Test
     void add() {
+        MyMathCalc calc = new MyMathCalc();
+
         int expected = 5;
         int actual  = calc.add(2, 3);
 
@@ -25,6 +25,8 @@ class MyMathCalcTest {
 
     @Test
     void multiply() {
+        MyMathCalc calc = new MyMathCalc();
+
         int expected = 6;
         int actual  = calc.multiply(2, 3);
 
@@ -33,6 +35,8 @@ class MyMathCalcTest {
 
     @Test
     void divide() {
+        MyMathCalc calc = new MyMathCalc();
+
         double expected = 2;
         double actual  = calc.divide(4, 2);
 
@@ -41,6 +45,8 @@ class MyMathCalcTest {
 
     @Test
     void divideThrows() {
+        MyMathCalc calc = new MyMathCalc();
+
         assertThrows(IndexOutOfBoundsException.class, () -> calc.divide(2, 0));
     }
 }
